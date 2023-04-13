@@ -36,6 +36,11 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   font-family: sans-serif;
+  color: black;
+}
+
+h2 {
+ color: darkred;
 }
 
 button {

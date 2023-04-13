@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import palavroes from './palavroes'
+import expressoes from './expressoes'
 
 function App() {
   const [text, setText] = useState('')
@@ -18,13 +19,20 @@ function App() {
   const checarPalavroes = (frase) => {
     let palavras = frase.toLowerCase().split(/[ ,.;]+/);
     let temPalavraInadequada = false;
+    let temExpressaoInadequada = false;
     for (let i = 0; i < palavras.length; i++) {
       if (palavroes.includes(palavras[i])) {
         temPalavraInadequada = true;
         break;
       }
     }
-    if (temPalavraInadequada) {
+    for (let i = 0; i < expressoes.length; i++) {
+      if (frase.toLowerCase().includes(expressoes[i].toLowerCase())) {
+        temExpressaoInadequada = true;
+        break;
+      }
+    }
+    if (temExpressaoInadequada || temPalavraInadequada) {
       return 'Seu comentário possui uma ou mais palavras que podem ser consideradas como conteúdo ofensivo.';
     } else {
       return 'O comentário não possui palavras inapropriadas.';

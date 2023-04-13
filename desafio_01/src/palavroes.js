@@ -5,10 +5,12 @@ const palavroes = [
     "cocô",
     "xixi",
     "cuzão",
+    "cuzao",
     "pinto",
     "cu",
     "viado",
     "sapatão",
+    "sapatao",
     "traveco",
     "gayzinho",
     "preto",
@@ -32,8 +34,6 @@ const palavroes = [
     "safado",
     "tarado",
     "escroto",
-    "saco de merda",
-    "filho da puta",
     "foda-se",
     "caralho",
     "porra",
@@ -67,11 +67,15 @@ const palavroes = [
     "trombadinha",
     "rapariga",
     "jumenta",
-    "amo hitler",
+    "hitler",
     "nazismo",
-    "sou incel",
+    "incel",
     "bucetuda",
-    "roludo"
+    "roludo",
+    "boga",
+    "nazi",
+    "putinho",
+    "matar"
 
   ];
   export default palavroes;
