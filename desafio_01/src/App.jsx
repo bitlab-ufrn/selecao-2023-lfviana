@@ -9,6 +9,7 @@ function App() {
   const [text, setText] = useState('')
   const [show, setShow] = useState(false)
   const [frase, setFrase] = useState('')
+  const [coments, setComents] = useState('')
     const handleChange = (e) => {
     const { value } = e.target;
     //console.log(value);
@@ -24,9 +25,9 @@ function App() {
       }
     }
     if (temPalavraInadequada) {
-      return 'O texto inserido contém uma frase ou palavra inapropriada.';
+      return 'Seu comentário possui uma ou mais palavras que podem ser consideradas como conteúdo ofensivo.';
     } else {
-      return 'O texto não possui palavras inapropriadas.';
+      return 'O comentário não possui palavras inapropriadas.';
     }
   };
   const handleClick = () => {
@@ -38,10 +39,12 @@ function App() {
   };
   return (
     <div>
-     <h1>Teste de segurança digital.</h1>
+      <div className='titulo'>
+      <h1>Comment Test</h1>
+      </div>
     <input  value={text} onChange={handleChange} placeholder='Digite um comentário:' type="text"/>
     <button onClick={handleClick}>Salvar</button>
-    {show ? <h2>{frase}</h2> : <h2>O seu texto não foi salvo</h2>}
+    <h2>{frase}</h2>
     </div>
   )
 }

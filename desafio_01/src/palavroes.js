@@ -61,7 +61,17 @@ const palavroes = [
     "pnc",
     "fds",
     "pqp",
-    "lixo"
+    "lixo",
+    "imbecil",
+    "rolasso",
+    "trombadinha",
+    "rapariga",
+    "jumenta",
+    "amo hitler",
+    "nazismo",
+    "sou incel",
+    "bucetuda",
+    "roludo"
 
   ];
   export default palavroes;
