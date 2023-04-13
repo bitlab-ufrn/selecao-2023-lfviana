@@ -1,33 +1,47 @@
 import { useState } from 'react'
+import createFilter  from 'bad-words'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import palavroes from './palavroes'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [text, setText] = useState('')
+  const [show, setShow] = useState(false)
+  const [frase, setFrase] = useState('')
+    const handleChange = (e) => {
+    const { value } = e.target;
+    //console.log(value);
+    setText(value);
+  };
+  const checarPalavroes = (frase) => {
+    let palavras = frase.toLowerCase().split(/[ ,.;]+/);
+    let temPalavraInadequada = false;
+    for (let i = 0; i < palavras.length; i++) {
+      if (palavroes.includes(palavras[i])) {
+        temPalavraInadequada = true;
+        break;
+      }
+    }
+    if (temPalavraInadequada) {
+      return 'O texto inserido contém uma frase ou palavra inapropriada.';
+    } else {
+      return 'O texto não possui palavras inapropriadas.';
+    }
+  };
+  const handleClick = () => {
+    const fraseFormatada = 
+    checarPalavroes(text);
+    setFrase(fraseFormatada);
+    console.log(frase);
+    setShow(true);
+  };
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div>
+     <h1>Teste de segurança digital.</h1>
+    <input  value={text} onChange={handleChange} placeholder='Digite um comentário:' type="text"/>
+    <button onClick={handleClick}>Salvar</button>
+    {show ? <h2>{frase}</h2> : <h2>O seu texto não foi salvo</h2>}
     </div>
   )
 }

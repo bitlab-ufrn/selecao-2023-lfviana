@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "profanity-filter": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -18,4 +19,5 @@
     "@vitejs/plugin-react": "^3.1.0",
     "vite": "^4.2.0"
   }
+
 }
