@@ -10,6 +10,8 @@ const expressoes = [
     "amo hitler",
     "filho da mãe",
     "filho da mae",
-    "minha pomba"
+    "minha pomba",
+    "comer teu",
+    "comer tua"
 ]
 export default expressoes;
