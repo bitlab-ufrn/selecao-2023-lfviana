@@ -77,7 +77,7 @@ const palavroes = [
     "putinho",
     "matar",
     "pica",
-    "bosta"
+    "bosta",
     "piroca"
 
   ];
