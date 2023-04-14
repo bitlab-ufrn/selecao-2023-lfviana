@@ -87,6 +87,13 @@ const palavroes = [
     "crl",
     "krai",
     "carai",
-    "krl"
+    "krl",
+    "vagabundo",
+    "galado",
+    "pombao",
+    "pombeta",
+    "arrombada",
+    'gala'
+
   ];
   export default palavroes;
