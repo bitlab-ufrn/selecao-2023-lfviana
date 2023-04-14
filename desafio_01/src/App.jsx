@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import createFilter  from 'bad-words'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import palavroes from './palavroes'
 import expressoes from './expressoes'

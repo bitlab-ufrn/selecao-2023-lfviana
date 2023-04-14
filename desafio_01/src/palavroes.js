@@ -84,6 +84,9 @@ const palavroes = [
     "peituda",
     "putinha",
     "bostinha",
-    "crl"
+    "crl",
+    "krai",
+    "carai",
+    "krl"
   ];
   export default palavroes;
