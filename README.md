@@ -34,5 +34,5 @@ Você está livre para utilizar qualquer linguagem ou ferramenta.
 1. Adicione a esse README instruções de acesso ao seu sistema
 
 ## Acesso
-Segue abaixo o link para acessar meu algoritmo no vercel:
+Segue o link para acessar meu algoritmo no vercel:
 https://desafio-woad.vercel.app/
