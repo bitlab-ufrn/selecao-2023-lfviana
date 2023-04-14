@@ -8,6 +8,7 @@ const palavroes = [
     "cuzao",
     "pinto",
     "cu",
+    "cu?",
     "viado",
     "sapatão",
     "sapatao",
