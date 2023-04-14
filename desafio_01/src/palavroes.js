@@ -75,7 +75,8 @@ const palavroes = [
     "boga",
     "nazi",
     "putinho",
-    "matar"
+    "matar",
+    "pica"
 
   ];
   export default palavroes;
