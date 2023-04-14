@@ -7,6 +7,9 @@ const expressoes = [
     "comer sua",
     "sou incel",
     "sou nazista",
-    "amo hitler"
+    "amo hitler",
+    "filho da mãe",
+    "filho da mae",
+    "minha pomba"
 ]
 export default expressoes;

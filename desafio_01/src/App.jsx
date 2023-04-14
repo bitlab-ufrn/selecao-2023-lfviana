@@ -13,7 +13,6 @@ function App() {
   const [coments, setComents] = useState('')
     const handleChange = (e) => {
     const { value } = e.target;
-    //console.log(value);
     setText(value);
   };
   const checarPalavroes = (frase) => {
@@ -33,25 +32,26 @@ function App() {
       }
     }
     if (temExpressaoInadequada || temPalavraInadequada) {
-      return 'Seu comentário possui uma ou mais palavras que podem ser consideradas como conteúdo ofensivo.';
+      return 'Seu comentário possui uma ou mais palavras que podem ser consideradas conteúdo ofensivo.';
     } else {
       return 'O comentário não possui palavras inapropriadas.';
     }
   };
   const handleClick = () => {
-    const fraseFormatada = 
-    checarPalavroes(text);
+    if (text.trim() === '') {
+      setFrase('Insira um comentário no campo acima.');
+      setShow(true);
+      return;
+    }
+    const fraseFormatada = checarPalavroes(text);
     setFrase(fraseFormatada);
-    console.log(frase);
     setShow(true);
   };
   return (
     <div>
-      <div className='titulo'>
-      <h1>Comment Test</h1>
-      </div>
+      <h1>Comente algo!</h1>
     <input  value={text} onChange={handleChange} placeholder='Digite um comentário:' type="text"/>
-    <button onClick={handleClick}>Salvar</button>
+    <button onClick={handleClick}>Comentar</button>
     <h2>{frase}</h2>
     </div>
   )

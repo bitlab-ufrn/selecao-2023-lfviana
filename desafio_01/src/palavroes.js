@@ -78,7 +78,9 @@ const palavroes = [
     "matar",
     "pica",
     "bosta",
-    "piroca"
-
+    "piroca",
+    "cachorra",
+    "peituda",
+    "putinha"
   ];
   export default palavroes;
